@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Margarine&family=Montserrat+Alternates:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+/*Navegador*/
+.navbar{
+    display: flex; /*Para que se ponga uno al lado del otro*/
+    justify-content: space-between; /*para que tenga espacio*/
+    padding: 2em; /*Creamos un espacio dentro del navegador, para el menú  */
+
+}
+
+/*D/L*/
+.brand span{
+    color:chartreuse;
+}
+
+.brand{
+    margin-top: -7px; /*Para que la DL esten alineados con el menú*/ 
+}
+
+.menu{
+    display: flex; /*Los alinea uno al lado del otro*/
+    width: 50%; /*Les da espacio entre cada uno: Home, About me, etc*/
+    justify-content: space-around; /*Justifica el contenido, es decir aprovecha toda la ventan*/
+}
+
+.menu li{
+    list-style: none; /*Les quita la viñeta de enlistar*/
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none; /*Le quita el subrayado*/ 
+    padding: 10px 20px; /*Para que al pasar el cursos, el relleno de color se vea más grande*/
+}
+
+/*A home le cambia de color*/
+.menu .active{
+    color:greenyellow;
+}
+
+
+.menu a:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: ease-in .5s;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+span{
+    color: greenyellow;
+}
+
+.download-cv{
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.50);
+}
+
+.download-cv:hover{
+    background-color: greenyellow;
+    box-shadow: none;
+}
+
+.main img{
+    width: 350px;
+    border: 50px solid  #191c32;
+    height: 520px;
+    z-index: 1;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2{
+    font-size: 2em;
+    color: #191c32;
+}
+
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: greenyellow;
+    margin-top: 5px;
+}
+
+.about p{
+    margin-bottom: 1em;
+}
+
+.portafolio, .contact-section{
+    width: 100vw;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.portafolio-heading{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+}
+
+.portafolio-heading h2, .contact-heading h2{
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.portafolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #2b3058;
+    margin: 1em;
+}
+
+.card_img{
+    width: 100%;
+    height: 150px;
+    
+    /*background-image: url("./Images/Unidad2.jpg");*/
+    background-size: cover;
+}
+
+.card_title{
+    padding: 20px;
+}
+
+.card_title p{
+    padding: 0.5em;
+}
+.card_projects-links{
+    display: flex;
+    justify-content: space-evenly; 
+    
+}
+
+.card_projects-links a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.card_projects-links i{
+    font-size: 1.5em;
+
+}
+
+.button-content{
+    display: flex;
+    justify-content: center;
+    margin: 1em;;
+}
+
+.card .project-details{
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+    display: flex;
+    align-self: center;
+}
+
+.card .project-details a{
+    text-decoration: none;
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+  .about iframe {
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+  }
+   
+   
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 2em;
+    background-color: greenyellow;
+  }
+  
+  .footer-content h2 {
+    font-size: 3em;
+  }
+  
+  .footer-content h5 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+  }
+  
+  .sotial-networks i {
+    font-size: 1.5em;
+  }
+  
+
+
